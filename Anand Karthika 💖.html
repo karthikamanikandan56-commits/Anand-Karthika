@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Valentine ❤️</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        font-family: 'Segoe UI', sans-serif;
+        color: #333;
+    }
+
+    .container {
+        background: #fff;
+        width: 400px;
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        color: #ff3366;
+    }
+
+    p {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background: #ff3366;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #e62e5c;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 15px;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- STEP 1 -->
+    <div id="step1">
+        <h1>💝 Click the link 💝</h1>
+        <button onclick="nextStep(2)">Open My Heart ❤️</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="step2" class="hidden">
+        <h1>You are my Valentine ❤️</h1>
+        <button onclick="nextStep(3)">Read My Letter 💌</button>
+    </div>
+
+    <!-- STEP 3 -->
+    <div id="step3" class="hidden">
+        <h1>My Love Letter 💖</h1>
+        <p>
+            Hi my love 💕<br><br>
+            Nee en life-la vandha naal irundu,
+            ella days-um bright-aa maariduchu ✨<br><br>
+            Un smile, un care, un love —
+            ellame enakku world-oda best gift 💎<br><br>
+            No matter what,
+            naan eppovum un side-la iruppen ❤️
+            eppavum kuda irupan , namakula sanda vanthruku iruthulum nenga yethulaiuma vittu kudukama 
+            eaium samathanam paduthruinga ,💗Thank You so much 4 years ean purichikittu irukingaaa ,
+            intha year 5 agum, inum nama life long senthu happy ah nama family oda irukanum ❤️,
+            I Loveee Uuuuuuuuu  Sooooo Muchhhhhh Hubbyyyyyyyyyyyyyy💖
+        </p>
+        <button onclick="nextStep(4)">Us Together 💑</button>
+    </div>
+
+    <!-- STEP 4 -->
+    <div id="step4" class="hidden">
+        <h1>Forever Us 💞</h1>
+        <img src="C:\Users\karth\OneDrive\Desktop\karthika\valentine\Assets\coupel1.jpeg" alt="Chlmmmmmm">
+        <img.src="C:\Users\karth\OneDrive\Desktop\karthika\valentine\Assets\couple2.jpeg" alt="Myyy Love..">
+        <p>
+            This is just the beginning of our beautiful journey 💖,Innum neriya Years irukku appavum senthu irukanum, 
+            happy ahh irukanum, innum neriya memories create pannanum, innum neriya love share pannanum, innum neriya happiness share pannanum, innum neriya fun share pannanum,innum neriya happy ah irukanum ❤️
+        </p>
+    </div>
+
+</div>
+
+<script>
+function nextStep(step) {
+    for (let i = 1; i <= 4; i++) {
+        document.getElementById("step" + i).classList.add("hidden");
+    }
+    document.getElementById("step" + step).classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
